@@ -1,0 +1,849 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #fff;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #54BD95;
+}
+
+.nav-links ul {
+    display: flex; /*membuat horisontal*/
+    list-style: none; /*menghilangkan style default */
+    gap: 30px;
+    font-size: 16px;
+}
+
+.nav-links a {
+    text-decoration: none; /*menghilangkan garis bawah*/
+    color: #A6A6A6;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #000000;
+    font-size: 18px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons .login {
+    color: #A6A6A6;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+.auth-buttons .signup {
+    background: #54BD95;
+    color: #F8F8FA;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(to right, #f9fdfc, #f5f7f6);
+    flex-wrap: wrap; /* biar responsif */
+}
+
+.hero-left {
+    max-width: 555px; /* sesuai ukuran di figma */
+}
+
+.hero-left h1 {
+    font-size: 80px;       /* sesuai figma */
+    font-weight: bold;     /* Bold */
+    margin-bottom: 20px;
+    line-height: 90px;     /* sesuai line height figma */
+    color: #191A15;        /* sesuai figma */
+}
+
+.hero-left .line img {
+    width: 479px;      /* sesuai ukuran figma */
+    height: 26px;      /* sesuai ukuran figma */
+    display: block;    /* biar rapih */
+    margin: 20px 0;    /* jarak atas-bawah sesuai figma */
+}
+
+
+.hero-left p {
+  font-size: 18px;      
+  font-weight: 500;     
+  color: #000000;        
+  line-height: 30px;     
+  max-width: 461px;      
+  height: 90px;          
+  margin-bottom: 30px;   
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px; 
+    align-items: center;  
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px; 
+    align-items: center;  
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px; 
+    align-items: center;  
+}
+
+/* Tombol utama */
+.btn-primary {
+    background: #54BD95;        
+    color: white;
+    padding: 14px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #3cae7f;
+}
+
+/* Tombol sekunder */
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #191A15;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    color: #54BD95;
+}
+
+/* icon */
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E2E2E2;  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; 
+}
+
+.btn-icon svg {
+    display: block;
+}
+
+
+
+/* Collaboration Section */
+.collaboration {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+    align-items: center;  
+}
+
+.collaboration h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #191A15;
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.collaboration .brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.collaboration .brands img {
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.collaboration .brands img:hover {
+    opacity: 1;
+}
+
+/* Support Section */
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 120px auto;   /* sesuai figma: lebih longgar */
+  padding: 0 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.support-left {
+  flex: 1;
+}
+
+.support-left h2 {
+  font-size: 50px;       /* sesuai figma heading besar */
+  font-weight: 700;
+  margin-bottom: 20px;  
+  color: #111;
+}
+
+.support-left p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #A6A6A6;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.ratings {
+  display: flex;
+  gap: 40px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stars {
+  color: #f5b400;   /* warna kuning bintang */
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.rating span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #191A15;
+  margin-bottom: 4px;
+  max-width: 112p;
+  max-height: 22px;
+}
+
+.rating p {
+  font-size: 18px;
+  color: #A6A6A6;
+  font-weight: bold;
+  max-width: 103px;
+  max-height: 22px;
+}
+
+.support-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* sesuai spacing di figma */
+    width: 509px; /* sesuai ukuran group di figma */
+    height: auto; /* biarkan fleksibel */
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* jarak icon dan text */
+}
+
+.feature-icon {
+    width: 40px;   /* samakan dengan ukuran icon di figma */
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.feature-text h3 {
+    font-size: 18px;     /* sesuai figma */
+    font-weight: 700;
+    line-height: 28px;   /* sesuai figma */
+    margin: 0 0 6px 0;
+    color: #000000;
+}
+
+.feature-text p {
+    font-size: 18px;     /* sesuai figma */
+    font-weight: 500;   
+    margin: 0;
+    color: #A6A6A6;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+/* Section */
+.features {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 0; /* sesuai ruang atas bawah di figma */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header jadi horizontal */
+.features-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* jarak antar elemen */
+  margin-bottom: 60px;
+}
+
+.features-header h2 {
+  flex: 1; /* bagian kiri */
+  font-size: 36px;
+  font-weight: 700;
+  color: #191A15;
+  line-height: 1.2;
+  margin: 0; /* hilangkan margin bawah default */
+}
+
+.features-header p {
+  flex: 2; /* bagian tengah */
+  font-size: 16px;
+  line-height: 28px;
+  color: #5F5F5F;
+  margin: 0;
+}
+
+.btn-get-started {
+  flex-shrink: 0; /* biar ukurannya tetap */
+  background: #22C55E;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-get-started:hover {
+  opacity: 0.9;
+}
+
+/* Cards Layout */
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 364px);
+  justify-content: space-between;
+  gap: 40px; /* jarak antar card persis figma */
+}
+
+/* Card Style */
+.feature-card {
+  width: 364px;
+  height: 430px;
+  background: #F9F8FE;
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.feature-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #191A15;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+
+/* Card tengah lebih menonjol */
+.main-card {
+  background: #fff;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.benefit-section {
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(180deg, #fff 0%, #f6fdf9 100%);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.benefit-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.benefit-text {
+    flex: 1;
+}
+
+.benefit-title {
+    line-height: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #191A15;
+    margin-bottom: 30px;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefit-list li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-check {
+    color: #27ae60;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.benefit-image {
+    flex: 1;
+    text-align: right;
+}
+
+.benefit-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Pricing Section */
+.pricing-section {
+  background: linear-gradient(180deg, #f9fdfc 0%, #f3fbf9 100%);
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-container {
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #191a15;
+}
+
+.pricing-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.billing-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.btn-toggle {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid #d9e2e8;
+  background: #fff;
+  color: #191a15;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-toggle.active {
+  background: #22c58b;
+  color: #fff;
+  border: none;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.pricing-card {
+  width: 374px;
+  height: 644px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.pricing-card.pro {
+  background: #22c58b;
+  color: #fff;
+}
+
+.plan-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.plan-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.pricing-card.pro .plan-subtitle {
+  color: #e5f7f1;
+}
+
+.plan-price {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.plan-price .save {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #e5f7f1;
+  margin-top: 5px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.plan-features li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.plan-features li::before {
+  content: "✔";
+  color: #22c58b;
+  position: absolute;
+  left: 0;
+}
+
+.pricing-card.pro .plan-features li::before {
+  color: #fff;
+}
+
+.btn-plan {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-plan.free {
+  background: transparent;
+  color: #22c58b;
+  border: 1px solid #22c58b;
+}
+
+.btn-plan.pro-btn {
+  background: #fff;
+  color: #22c58b;
+}
+
+.btn-plan.business {
+  background: transparent;
+  color: #22c58b;
+  border: 1px solid #22c58b;
+}
+
+.footer-section {
+  background-color: #161C28;
+  color: #fff;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.footer-container {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.testimonial {
+  width: 466px;
+}
+
+.testimonial h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.testimonial .desc {
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.testimonial .author {
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-bottom: 20px;
+}
+
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.form-box {
+  width: 612px;
+  background: #222938;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-box label {
+  display: block;
+  margin: 15px 0 8px;
+  font-size: 14px;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.form-box textarea {
+  height: 100px;
+  resize: none;
+}
+
+.btn-request {
+  width: 100%;
+  background: #22c58b;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.free-trial {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  color: #a0a0a0;
+}
+
+.footer-bottom {
+  width: 1180px;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.newsletter h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #22c58b;
+  margin-bottom: 10px;
+}
+
+.newsletter-box {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #22c58b;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.newsletter-box input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 8px;
+  flex: 1;
+}
+
+.newsletter-box button {
+  background: #22c58b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links h5 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #b3b3b3;
+}
+
+.footer-credits {
+  width: 1180px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-right {
+        margin-top: 40px;
+    }
+
+    .floating-box.amount {
+        left: 20px;
+        top: -20px;
+    }
+
+    .floating-box.income {
+        left: 20px;
+        bottom: -20px;
+    }
+
+    .floating-card {
+        right: 20px;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 36px;
+    }
+
+    .main-image {
+        width: 250px;
+    }
+}
