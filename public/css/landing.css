@@ -22,14 +22,14 @@
 }
 
 .nav-links ul {
-    display: flex; /*membuat horisontal*/
-    list-style: none; /*menghilangkan style default */
+    display: flex; 
+    list-style: none; 
     gap: 30px;
     font-size: 16px;
 }
 
 .nav-links a {
-    text-decoration: none; /*menghilangkan garis bawah*/
+    text-decoration: none; 
     color: #A6A6A6;
     font-weight: 500;
 }
@@ -65,26 +65,26 @@
     align-items: center;
     padding: 80px;
     background: linear-gradient(to right, #f9fdfc, #f5f7f6);
-    flex-wrap: wrap; /* biar responsif */
+    flex-wrap: wrap;
 }
 
 .hero-left {
-    max-width: 555px; /* sesuai ukuran di figma */
+    max-width: 555px; 
 }
 
 .hero-left h1 {
-    font-size: 80px;       /* sesuai figma */
-    font-weight: bold;     /* Bold */
+    font-size: 80px;      
+    font-weight: bold;     
     margin-bottom: 20px;
-    line-height: 90px;     /* sesuai line height figma */
-    color: #191A15;        /* sesuai figma */
+    line-height: 90px;     
+    color: #191A15;        
 }
 
 .hero-left .line img {
-    width: 479px;      /* sesuai ukuran figma */
-    height: 26px;      /* sesuai ukuran figma */
-    display: block;    /* biar rapih */
-    margin: 20px 0;    /* jarak atas-bawah sesuai figma */
+    width: 479px;     
+    height: 26px;      
+    display: block;    
+    margin: 20px 0;    
 }
 
 
@@ -212,7 +212,7 @@
   align-items: flex-start;
   gap: 60px;
   max-width: 1300px;
-  margin: 120px auto;   /* sesuai figma: lebih longgar */
+  margin: 120px auto; 
   padding: 0 40px;
   font-family: "Inter", sans-serif;
 }
@@ -222,7 +222,7 @@
 }
 
 .support-left h2 {
-  font-size: 50px;       /* sesuai figma heading besar */
+  font-size: 50px;   
   font-weight: 700;
   margin-bottom: 20px;  
   color: #111;
@@ -248,7 +248,7 @@
 }
 
 .stars {
-  color: #f5b400;   /* warna kuning bintang */
+  color: #f5b400;   
   font-size: 28px;
   margin-bottom: 6px;
 }
@@ -273,33 +273,33 @@
 .support-right {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* sesuai spacing di figma */
-    width: 509px; /* sesuai ukuran group di figma */
-    height: auto; /* biarkan fleksibel */
+    gap: 30px; 
+    width: 509px; 
+    height: auto; 
 }
 
 .feature {
     display: flex;
     align-items: flex-start;
-    gap: 20px; /* jarak icon dan text */
+    gap: 20px; 
 }
 
 .feature-icon {
-    width: 40px;   /* samakan dengan ukuran icon di figma */
+    width: 40px;   
     height: 40px;
     flex-shrink: 0;
 }
 
 .feature-text h3 {
-    font-size: 18px;     /* sesuai figma */
+    font-size: 18px;     
     font-weight: 700;
-    line-height: 28px;   /* sesuai figma */
+    line-height: 28px;  
     margin: 0 0 6px 0;
     color: #000000;
 }
 
 .feature-text p {
-    font-size: 18px;     /* sesuai figma */
+    font-size: 18px;    
     font-weight: 500;   
     margin: 0;
     color: #A6A6A6;
@@ -307,34 +307,33 @@
     letter-spacing: 0;
 }
 
-/* Section */
+/* Our Features you cab get */
 .features {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 80px 0; /* sesuai ruang atas bawah di figma */
+  padding: 80px 0;
   font-family: 'Inter', sans-serif;
 }
 
-/* Header jadi horizontal */
 .features-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px; /* jarak antar elemen */
+  gap: 40px; 
   margin-bottom: 60px;
 }
 
 .features-header h2 {
-  flex: 1; /* bagian kiri */
+  flex: 1; 
   font-size: 36px;
   font-weight: 700;
   color: #191A15;
   line-height: 1.2;
-  margin: 0; /* hilangkan margin bawah default */
+  margin: 0; 
 }
 
 .features-header p {
-  flex: 2; /* bagian tengah */
+  flex: 2;
   font-size: 16px;
   line-height: 28px;
   color: #5F5F5F;
@@ -342,7 +341,7 @@
 }
 
 .btn-get-started {
-  flex-shrink: 0; /* biar ukurannya tetap */
+  flex-shrink: 0; 
   background: #22C55E;
   color: #fff;
   font-size: 14px;
@@ -357,7 +356,7 @@
   opacity: 0.9;
 }
 
-/* Cards Layout */
+
 .features-cards {
   display: grid;
   grid-template-columns: repeat(3, 364px);
@@ -365,7 +364,7 @@
   gap: 40px; /* jarak antar card persis figma */
 }
 
-/* Card Style */
+
 .feature-card {
   width: 364px;
   height: 430px;
@@ -402,7 +401,7 @@
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-
+/* What Benifit Will You Get */
 .benefit-section {
     width: 100%;
     padding: 80px 0;

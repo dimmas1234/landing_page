@@ -287,14 +287,14 @@
                 <div class="icon"></div>
                 <h3>Login</h3>
 
-                {{-- ✅ Tambahin pesan sukses kalau login berhasil --}}
+                {{-- Tambahin pesan sukses kalau login berhasil --}}
                 @if(session('success'))
                 <div style="color: green; margin-bottom: 15px;">
                     {{ session('success') }}
                 </div>
                 @endif
 
-                {{-- ✅ Tambahin pesan error kalau login gagal --}}
+                {{-- Tambahin pesan error kalau login gagal --}}
                 @if($errors->any())
                 <div style="color: red; margin-bottom: 15px;">
                     {{ $errors->first() }}
