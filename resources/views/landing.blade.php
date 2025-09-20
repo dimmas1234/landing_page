@@ -22,7 +22,7 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="#" class="login">Login</a>
+            <a href="{{ route('login')}}" class="login">Login</a>
             <a href="#" class="signup">Sign Up</a>
         </div>
     </header>
@@ -285,31 +285,16 @@
 
             <div class="form-box">
                 <div class="icon"></div>
-                <h3>Login</h3>
-
-                {{-- Tambahin pesan sukses kalau login berhasil --}}
-                @if(session('success'))
-                <div style="color: green; margin-bottom: 15px;">
-                    {{ session('success') }}
-                </div>
-                @endif
-
-                {{-- Tambahin pesan error kalau login gagal --}}
-                @if($errors->any())
-                <div style="color: red; margin-bottom: 15px;">
-                    {{ $errors->first() }}
-                </div>
-                @endif
-
-                <form action="{{ route('login') }}" method="POST">
-                    @csrf
+                <h3>Get Started</h3>
+                <form action="{{ route('contact.store') }}" method="POST">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="What are you say ?" required></textarea>
 
-                    <button type="submit" class="btn-request">Login</button>
+                    <button type="submit" class="btn-request">Request Demo</button>
+                    <p class="free-trial">or Start Free Trial</p>
                 </form>
             </div>
         </div>
@@ -360,13 +345,6 @@
             <p>Terms and Conditions • Privacy Policy</p>
         </div>
     </section>
-
-
-
-
-
-
-
 </body>
 
 </html>

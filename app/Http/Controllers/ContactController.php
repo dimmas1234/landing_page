@@ -4,23 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class ContactController extends Controller
 {
-    public function login(Request $request)
+    public function store(Request $request)
     {
-        // validasi input
+        // Validasi input
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required|min:6',
+            'message' => 'required|string|max:500',
         ]);
 
-        // 🚀 Contoh sederhana (tanpa database)
-        // Misalnya login berhasil kalau email & password cocok dengan ini
-        if ($request->email === 'admin@example.com' && $request->password === '123456') {
-            return redirect()->route('dashboard')->with('success', 'Login berhasil!');
-        }
+        // Untuk contoh: simpan ke log atau database
+        // dd($request->all()); // debugging
 
-        // kalau gagal
-        return back()->withErrors(['login' => 'Email atau password salah']);
+        // Misalnya kirim email atau simpan ke database
+        // Contact::create($request->all());
+
+        return back()->with('success', 'Pesan berhasil dikirim!');
     }
 }
