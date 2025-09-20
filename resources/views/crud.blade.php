@@ -1,8 +1,14 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div style="padding: 50px; text-align: center;">
-    <h1>Selamat Datang di Dashboard 🎉</h1>
-    <p>Login berhasil, ini adalah halaman setelah login.</p>
-</div>
-@endsection
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
