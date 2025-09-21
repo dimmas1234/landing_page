@@ -6,12 +6,12 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Container */
 body {
     background: #f4f6f9;
     color: #333;
 }
 
+/* Container */
 .container {
     max-width: 1000px;
     margin: 40px auto;
@@ -107,4 +107,54 @@ body {
 
 .form-inline {
     display: inline;
+}
+
+/* Form */
+.form-container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-submit {
+    background: #2563eb;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.btn-submit:hover {
+    background: #1d4ed8;
+}
+
+.btn-back {
+    background: #6b7280;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.btn-back:hover {
+    background: #4b5563;
 }
