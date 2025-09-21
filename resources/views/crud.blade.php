@@ -5,51 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Mahasiswa</title>
+    <link rel="stylesheet" href="{{ asset('css/crud.css') }}">
 </head>
 
 <body>
-    <h1>Data Mahasiswa</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Data Mahasiswa</h1>
+            <a href="{{ route('mahasiswa.create') }}" class="btn-add">+ Add Data</a>
+        </div>
 
-    @if(session('success'))
-    <p style="color:green">{{ session('success') }}</p>
-    @endif
+        @if(session('success'))
+        <p class="success">{{ session('success') }}</p>
+        @endif
 
-    <!-- Form Tambah Data -->
-    <form action="{{ route('mahasiswa.store') }}" method="POST">
-        @csrf
-        <input type="text" name="nama" placeholder="Nama" required>
-        <input type="text" name="fakultas" placeholder="Fakultas" required>
-        <input type="text" name="prodi" placeholder="Prodi" required>
-        <input type="number" name="tahun" placeholder="Tahun" required>
-        <button type="submit">Tambah</button>
-    </form>
-
-    <!-- Tabel Data -->
-    <table border="1" cellpadding="5">
-        <tr>
-            <th>Nama</th>
-            <th>Fakultas</th>
-            <th>Prodi</th>
-            <th>Tahun</th>
-            <th>Aksi</th>
-        </tr>
-        @foreach($mahasiswas as $mhs)
-        <tr>
-            <td>{{ $mhs->nama }}</td>
-            <td>{{ $mhs->fakultas }}</td>
-            <td>{{ $mhs->prodi }}</td>
-            <td>{{ $mhs->tahun }}</td>
-            <td>
-                <a href="{{ route('mahasiswa.edit', $mhs->id) }}">Edit</a>
-                <form action="{{ route('mahasiswa.destroy', $mhs->id) }}" method="POST" style="display:inline;">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" onclick="return confirm('Yakin hapus?')">Hapus</button>
-                </form>
-            </td>
-        </tr>
-        @endforeach
-    </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Fakultas</th>
+                    <th>Prodi</th>
+                    <th>Tahun</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($mahasiswas as $mhs)
+                <tr>
+                    <td>{{ $mhs->nama }}</td>
+                    <td>{{ $mhs->fakultas }}</td>
+                    <td>{{ $mhs->prodi }}</td>
+                    <td>{{ $mhs->tahun }}</td>
+                    <td>
+                        <a href="{{ route('mahasiswa.edit', $mhs->id) }}" class="btn-edit">Edit</a>
+                        <form action="{{ route('mahasiswa.destroy', $mhs->id) }}" method="POST" class="form-inline">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn-delete" onclick="return confirm('Yakin hapus?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
